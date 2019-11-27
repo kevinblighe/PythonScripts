@@ -3,8 +3,12 @@
   <h3>IncrementPos.py</h3>
   increment POS field by 1 in an uncompressed VCF
   
+  <hr>
+  
   <h3>SplitMultialleles.py</h3>
   split multi-allelic calls into multiple entries in an uncompressed VCF
+  
+  <hr>
   
   <h3>LocusTagSearch.py / LocusTagSearch.list</h3>
   search for locus tags (in input file) at NCBI via eUtils (https://www.biostars.org/p/278614/)
@@ -14,8 +18,15 @@
   <h3>ProteinFASTASearch.py / ProteinFASTASearch.list</h3>
   search for FASTA protein sequences based on protein IDs (e.g. UniProt) taken from an input file (https://www.biostars.org/p/278747/)
 
-```  
-  python ProteinFASTASearch.py -f 1 -e kevin@clinicalbioinformatics.co.uk ProteinFASTASearch.list 
+```
+cat ProteinFASTASearch.list
+
+Q66LE6
+Q9UKV3
+
+
+python ProteinFASTASearch.py -f 1 -e kevin@clinicalbioinformatics.co.uk ProteinFASTASearch.list
+
 >NP_060931.2 serine/threonine-protein phosphatase 2A 55 kDa regulatory subunit B delta isoform isoform a [Homo sapiens]
 MAGAGGGGCPAGGNDFQWCFSQVKGAIDEDVAEADIISTVEFNYSGDLLATGDKGGRVVIFQREQENKSR
 PHSRGEYNVYSTFQSHEPEFDYLKSLEIEEKINKIRWLPQQNAAHFLLSTNDKTIKLWKISERDKRAEGY
@@ -52,7 +63,8 @@ QLEREKRREHSRERDRERERERERDRGDRDRDRERDRERGRERDRRDTKRHSRSRSRSTPVRDRGGRR
   search for FASTA sequences based on any keyword (https://www.biostars.org/p/279584/)
   
   ```
-  python ProteinFASTASearchByFASTATitle.py -e kevin@clinicalbioinformatics.co.uk -t "Bacillus anthracis"
+python ProteinFASTASearchByFASTATitle.py -e kevin@clinicalbioinformatics.co.uk -t "Bacillus anthracis"
+
 >WP_154574506.1 IS3 family transposase, partial [Bacillus anthracis]
 KKDEYSIKEICILIGIPRSTYYRWKNKEKDVKEAKLEQAILTICMTNHFRYGHRKVTALLKRKYNYHPNR
 KTVQKIMQKKNLQCRVKRKRRTWINGESRIVVENLLNRNFQANKPNEKWVTDITYLPFGTEMLYLLSIMD
