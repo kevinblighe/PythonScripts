@@ -27,6 +27,6 @@ handle.close()
 for gi in results['IdList']:
 	handle = Entrez.efetch(db='protein', id=gi, rettype='fasta')
 
-	print handle.read()
+	print(handle.read())
 
 	handle.close()
