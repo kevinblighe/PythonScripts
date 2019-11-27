@@ -19,7 +19,7 @@ locus_tag_col = int(args.locus_tag_col_str) - 1
      
 with open(args.infile_name, 'r') as infile:
 	for line in infile:
-        	gene_name = '-'
+		gene_name = '-'
 
 		locus_tag = line.split()[locus_tag_col]
 
@@ -32,8 +32,8 @@ with open(args.infile_name, 'r') as infile:
 		handle.close()
 
 		for id in results['IdList']:
-			print id
+			print(id)
 
 			handle = Entrez.efetch(db='nuccore', id=id, retmode='txt')
 
-			print handle.read
+			print(handle.read)
