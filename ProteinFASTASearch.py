@@ -29,12 +29,12 @@ with open(arguments.InputFile, 'r') as InputFile:
 
 		handle.close()
 
-		print results
+		print(results)
 
 		#Lookup the FASTA sequence for each protein by its GeneInfo Identifier (GI) number
-                for gi in results['IdList']:
+		for gi in results['IdList']:
 			handle = Entrez.efetch(db='protein', id=gi, rettype='fasta')
-
-                        print handle.read()
-
+			
+			print(handle.read())
+			
 			handle.close()
